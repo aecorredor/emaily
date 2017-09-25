@@ -11,7 +11,7 @@ class Payments extends Component {
         description="$5 for 5 email credits"
         amount={500} // number of cents
         token={token => this.props.handleToken(token)} // cb after getting auth token from API
-        stripeKey={process.env.REACT_APP_STRIPE_KEY}
+        stripeKey={process.env.REACT_APP_STRIPE_KEY} // needs to be added in heroku too
       >
         <button className="btn">
           Add Credits
